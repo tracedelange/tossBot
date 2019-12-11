@@ -26,7 +26,7 @@ import environ
 # In[4]:
 
 #Web server initialization?
-app.run(host= '0.0.0.0', port=environ.get('PORT'))
+
 
 
 #Tweepy inantilization
