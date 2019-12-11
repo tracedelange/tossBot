@@ -3,6 +3,8 @@
 
 # In[2]:
 
+
+
 #from os import environ
 #from flask import Flask
 
@@ -17,13 +19,14 @@ import tweepy
 import json
 import requests
 import time
+import environ
 
 
 
 # In[4]:
 
-
-
+#Web server initialization?
+app.run(host= '0.0.0.0', port=environ.get('PORT'))
 
 
 #Tweepy inantilization
