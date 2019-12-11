@@ -3,17 +3,17 @@
 
 # In[2]:
 
-from os import environ
-from flask import Flask
+#from os import environ
+#from flask import Flask
 
-app = Flask(__name__)
-app.run(environ.get('PORT'))
+#app = Flask(__name__)
+#app.run(environ.get('PORT'))
 
 
 # In[3]:
 
 
-from lib import tweepy
+import tweepy
 import json
 import requests
 import time
