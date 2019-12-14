@@ -1,1 +1,1 @@
-web: python server.py
+worker: python TossBotDeploy.py
