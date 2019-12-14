@@ -100,7 +100,7 @@ update = (verdict +'\n \n'+"Current weather for Eugene Oregon:"
 
 api.update_status(update)
 
-	
+time.sleep(60*60)
 
 
 # In[ ]:
