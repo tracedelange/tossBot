@@ -19,7 +19,7 @@ import tweepy
 import json
 import requests
 import time
-import environ
+#import environ
 
 
 
