@@ -95,13 +95,11 @@ update = (verdict +'\n \n'+"Current weather for Eugene Oregon:"
 
 # In[8]:
 
-back_log = update
-
 
 # Send processed update as a tweet.
-while True:
-	api.update_status(update)
-	time.sleep(60*60)
+
+api.update_status(update)
+
 	
 
 
