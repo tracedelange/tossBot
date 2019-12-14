@@ -19,14 +19,16 @@ import tweepy
 import json
 import requests
 import time
-#import environ
 
 
 
-# In[4]:
 
-#Web server initialization?
-
+from os import environ
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
+WEATHER_KEY = environ['WEATHER_KEY']
 
 
 #Tweepy inantilization
