@@ -87,7 +87,7 @@ elif current_temperature < 30:
 
 
 update = ("It's about " + str(current_temperature) +
- " degrees in Eugene and looking like " + str(weather_description)
+ " degrees in Eugene and looking like " + str(weather_description) + "."
   + "\n" + str(verdict))
 
 
