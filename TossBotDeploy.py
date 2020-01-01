@@ -70,23 +70,25 @@ z = x["weather"]
 weather_description = z[0]["description"] 
 
 #Process the verdict on if we should play die depending on the weather:
-if current_temperature > 60:
-    verdict = "It's looking like a great day for die boys"
-elif current_temperature < 60 and current_temperature > 30:
-    verdict = "It's looking like an alright day for die boys"
-elif current_temperature > 30:
-    verdict = "It's a fucked day for die boys"
+if current_temperature > 80:
+    verdict = "It's looking nice as fuck! it's a great day for die"
+elif current_temperature < 80 and current_temperature > 70:
+    verdict = "I'd say it's a pretty great day for die"
+elif current_temperature < 70 and current_temperature > 60:
+    verdict = "I'd say it's a good day for die"
+elif current_temperature < 60 and current_temperature > 50:
+    verdict = "It's an alright day for die"
+elif current_temperature < 50 and current_temperature > 40:
+    verdict = "It's not looking too great for die"
+elif current_temperature < 40 and current_temperature > 30:
+    verdict = "You're gonna need a beer blanket for die"
+elif current_temperature < 30:
+    verdict = "It's a fucked day for die"
 
 
-update = (verdict +'\n \n'+"Current weather for Eugene Oregon:"
-"\n Temperature = " +
-    str(current_temperature) + " Degrees F" 
-"\n Pressure (in atmospheres) = " +
-    str(current_pressure) +
-"\n Humidity (in percentage) = " +
-    str(current_humidiy) +
-"\n Description = " +
-    str(weather_description))
+update = ("It's about " + str(current_temperature) +
+ " degrees in Eugene and looking like " + str(weather_description)
+  + "\n" + str(verdict))
 
 
 # In[7]:
